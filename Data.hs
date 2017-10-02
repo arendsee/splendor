@@ -32,13 +32,13 @@ data PlayerState = PlayerState {
     , playerStateReserve :: [Card]
   }
 
-data SplenderState = SplenderState {
-      splenderStatePlayers :: [PlayerState]
-    , splenderStateBank    :: BankState
-    , splenderStateNobles  :: [Noble]
-    , splenderStateTable   :: [Card]
-    , splenderStateDecks   :: ([Card], [Card], [Card])
-    , splenderStateModulus :: Int
+data SplendorState = SplendorState {
+      splendorStatePlayers :: [PlayerState]
+    , splendorStateBank    :: BankState
+    , splendorStateNobles  :: [Noble]
+    , splendorStateTable   :: [Card]
+    , splendorStateDecks   :: ([Card], [Card], [Card])
+    , splendorStateModulus :: Int
   }
 
 data Turn = Reserve Card | Buy Card | Get [Coin]
